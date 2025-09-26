@@ -1,2 +1,20 @@
-# Argentina-Maritime-Traffic-Report
-The report has 3 main tabs: general operations, operations by port, and by berth. Data is updated monthly through automated Python scripts.
+# Maritime Logistics Dashboard – Argentina
+
+This project presents an interactive Power BI dashboard focused on maritime logistics operations in Argentina.  
+
+It includes 3 main pages:  
+- **General Operations**  
+- **Operations by Port**  
+- **Operations by Berth**  
+
+Data is updated monthly (on the 15th), using Python scripts for web scraping, extraction, and processing.  
+
+Repository Structure
+- `dashboard.pbix`: Main Power BI dashboard  
+- `src/`: Python scripts for data extraction and cleaning  
+- `data/`: Raw and processed datasets  
+- `reports/`: Sample reports and dashboard screenshots  
+
+Tech Stack
+- Python (requests, BeautifulSoup, pandas)  
+- Power BI  
