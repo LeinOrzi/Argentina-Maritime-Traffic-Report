@@ -12,7 +12,7 @@ Data is updated monthly (on the 15th), using Python scripts for web scraping, ex
 Repository Structure
 - `dashboard.pbix`: Main Power BI dashboard  
 - `src/`: Python scripts for data extraction and cleaning  
-- `data/`: Raw and processed datasets  
+- `September 25/`: Raw and processed datasets  
 - `reports/`: Sample reports and dashboard screenshots  
 
 Tech Stack
