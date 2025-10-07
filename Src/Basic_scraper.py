@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-url = "https://www.isa-agents.com.ar/info/line_up_mndrn.php?lang=es&select_day=15&select_month=09&select_year=2025"
+url = ""
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
@@ -21,5 +21,6 @@ for tr in table.find_all("tr"):
 df = pd.DataFrame(rows, columns=headers[:len(rows[0])])
 
 df.to_excel("Septiembre_15.xlsx", index=False)
+
 
 print("Datos guardados en lineup.xlsx con headers")
