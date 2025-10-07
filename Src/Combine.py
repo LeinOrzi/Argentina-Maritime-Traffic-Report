@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-ruta = r"C:\Users\Lucas\Desktop\Archivos Importantes\Proyectos Py\ProyectoMaritimo\September 2025"
+ruta = r""
 output_file = os.path.join(ruta, "Mensual.xlsx")
 
 cols_clave = ["Port", "Berth", "Vessel", "Cargo", "Quantity", "Shipper"]
@@ -31,3 +31,4 @@ df_final = df_final.drop(columns=["hash"])
 
 df_final.to_excel(output_file, index=False)
 print(f"Excel combinado y filtrado guardado en: {output_file}")
+
