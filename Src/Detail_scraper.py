@@ -4,7 +4,7 @@ import pandas as pd
 
 output_file = "Septiembre_24.xlsx"
 
-url = "https://www.isa-agents.com.ar/info/line_up_mndrn.php?lang=es&select_day=24&select_month=09&select_year=2025"
+url = ""
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
@@ -65,3 +65,4 @@ if "Quantity" in df.columns:
 df.to_excel(output_file, index=False)
 
 print(f"Datos guardados en {output_file} en una sola hoja con WaitingTime_Days y fechas normalizadas")
+
